@@ -2,73 +2,111 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5a908837e2.js" crossorigin="anonymous"></script>
     <Title>Petshop</Title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="lineanegra">
             <h4>Grandes ofertas en comederos</h4>
-                <ul style="list-style: none;">
-                    <li><div>Español</div></li>
-                    <li><div>$Arg</div></li>
-                </ul>
+                <nav class="navsuperior">
+                    <label for="idioma"></label>
+                        <select id="idioma">
+                            <option value="Español">Español</option>
+                        </select>
+                            <label for="idioma"></label>
+                                <select id="Moneda">
+                                    <option value="Moneda">$Arg</option>
+                                </select>
+                </nav>                                    
         </div>
-        <nav>
-            <img src="./img/Logo (1).png" alt="Pet&Dog">
-            <ul style="list-style: none;">
-                <li><a href=""><i class="fa-solid fa-paw"></i>Categorías</a></li>
-                <li><a href=""><i class="fa-solid fa-paw"></i>Pets</a></li>
-                <li><a href=""><i class="fa-solid fa-paw"></i>Nosotros</a></li>
-                <li><a href=""><i class="fa-solid fa-paw"></i>Contactanos</a></li>
-            </ul>
-        </nav>
-        <h1>¡Es un placer tenerte aquí!</h1>
+            <nav class="navnaranja">
+                <a href="#"><img src="./img/Logo (1).png" alt="Pet&Dog" class="logo"></a>
+                <ul style="list-style: none;" class="menu">
+                    <li><a href=""><i class="fa-solid fa-paw"></i>Categorías</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i>Pets</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i>Nosotros</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i>Contactanos</a></li>
+                </ul>
+                <span><i class="fa-solid fa-bars"></i></span>
+            </nav>
     </header>
-        <section>
-            <h2 class="banner">¡Comederos en descuento!<br><span class="tipoboton">COMEDEROS</span></h2>
-            </section>
-    <section>
-        <h2>Productos Destacados</h2>
-        <a href="#">Comederos</a>
-        <a href="#">Accesorios</a>
-        <a href="#">Comida</a>
-    </section>
-
-    <Section>
-        <img src="img/churrasquito.png" alt="Churrasquito">
-        <ul style="list-style: none;">
-            <li>Juguete Churrasquito</li>
-            <li class="amarillo">$150</li>
-        </ul>
-        <img src="img/churrasquito.png" alt="Churrasquito">
-        <ul style="list-style: none;">
-            <li>Juguete Churrasquito</li>
-            <li class="amarillo">$150</li>
-        </ul>
-        <img src="img/churrasquito.png" alt="churrasquito">
-        <ul style="list-style: none;">
-            <li>Juguete churrasquito</li>
-            <li class="amarillo">$150</li>
-        </ul>
-
-    </Section>
+        <section class="banner">
+            <ul style="list-style: none;">
+                <li><h1>¡Es un placer tenerte aquí!</h1></li>
+                <li>¡Comederos en descuento!</li>
+                <li class="amarillo">COMEDEROS</li>
+            </ul>
+        </section>
+                <section class="destacados">
+                    <img src="./img/pawprint 1.png" alt="Patita">
+                    <h2>Productos Destacados</h2>
+                    <p>Comederos - Accesorios - Comida</p>
+                </section>
+                    <Section class="productos">
+                        <div class="card">
+                            <img src="./img/churrasquito.png" alt="Churrasquito">
+                                <ul style="list-style: none;">
+                                    <li>Juguete churrasquito</li>
+                                    <li><span>$150</span></li>
+                                </ul>
+                        </div>
+                            <div class="card">
+                                <img src="./img/comedero.png" alt="Comedero para perro">
+                                <ul style="list-style: none;">
+                                    <li>Comedero para perro</li>
+                                    <li><span>$250</span></li>
+                                </ul>
+                            </div>
+                                <div class="card">
+                                    <img src="./img/huesito.png" alt="Juguete Huesito">
+                                    <ul style="list-style: none;">
+                                        <li>Juguete huesito</li>
+                                        <li><span>$650</span></li>
+                                    </ul>
+                                </div>
+                    </Section>
+                        <section class="seccionform">
+                            <h3 class="contactanos">Contáctanos</h3> 
+                                <form action="" method="post">
+                                        <div><label for="nombre"></label>
+                                        <input type="text" name="nombre" placeholder="Nombre y apellido" class="camposform"></div>
+                                        <div><label for="email"></label>
+                                        <input type="email" name="email" placeholder="Ingresá tu correo electrónico" class="camposform"></div>
+                                        <div><label for="telefono"></label>
+                                        <input type="tel" name="telefono" placeholder="Teléfono" class="camposform"></div>
+                                        <div class="cajabotones">
+                                            <button type="reset" class="resetear">Resetear</button>
+                                            <button type="submit" class="enviar">Enviar</button>
+                                        </div>
+                                </form>
+                        </section>
+                            <section class="cajasobre">
+                                <div class="contenedorsobre">
+                                    <i class="fa-solid fa-envelope sobre"></i>
+                                    <h3>Suscríbete para más novedades</h3>
+                                </div>
+                                <div>
+                                    <form action="#" method="post">
+                                        <input type="email" name="Suscríbete" placeholder="Ingresá tu correo electrónico" required class="camposuscribir">
+                                        <button type="submit" class="botonsuscribir">Suscribirme</button>
+                                    </form>
+                                </div>
+                            </section>
     <footer>
-        <i class="fa-solid fa-location-dot agrandariconos"></i>
-        <h3>Localidad</h3>
-        <p>Calle - Provincia</p>
-        <i class="fa-solid fa-phone-volume agrandariconos"></i>
-        <h3>Número de teléfono</h3>
-        <p>111-111111111111</p>
-        <i class="fa-solid fa-envelope-circle-check agrandariconos"></i>
-        <h3>Correo electrónico</h3>
-        <p>msn@msn.com</p>
-        <img src="./img/Logo (1).png" alt="Pet&Dog">
+        <div class="iconos">
+            <img src="./img/Location.png" alt="localidad" class="espaciadoiconos">
+            <img src="./img/Phone.png" alt="telefono" class="espaciadoiconos">
+            <img src="./img/Correo.png" alt="Correo" class="espaciadoiconos"> 
+        </div>
+            <div class="logofooter"><a href="#"><img src="./img/logofooter.png" alt="Pet&Dog"></a></div>
     </footer>
-        <div class="finalpagina">Todos los derechos reservador Front End</div>  
+    <div class="finalpagina">Todos los derechos reservador Front End</div>          
 </body>
 
 </html>
